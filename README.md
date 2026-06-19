@@ -1,3 +1,9 @@
+<div align="right">
+
+[English](./README.en.md) ·**简体中文**
+
+</div>
+
 # GK1200 维修手册查询 Skill
 
 高金 **GK1200**（手册内亦称 BX500 / BX1200）摩托车维修手册的 Claude Code 查询 skill。
@@ -23,16 +29,13 @@ gk1200-repair/
 
 ## 安装
 
-1. 把本仓库放到 Claude Code 的用户级 skill 目录，使其位于 `<skills>/gk1200-repair/`：
-   - 直接克隆 / 复制到 `~/.claude/skills/gk1200-repair/`；或
-   - 用 junction / 软链接指过去（Windows PowerShell）：
-     ```powershell
-     New-Item -ItemType Junction -Path "$env:USERPROFILE\.claude\skills\gk1200-repair" -Target "<本仓库路径>"
-     ```
+1. 把本仓库克隆或复制到 Claude Code 的用户级 skill 目录，使其最终位于 `<skills>/gk1200-repair/`：
+   - macOS / Linux：`~/.claude/skills/gk1200-repair/`
+   - Windows：`%USERPROFILE%\.claude\skills\gk1200-repair\`
 2. 重启 Claude Code（新建会话）使其加载 skill。
-3. 直接提问即可触发，例如："GK1200 后轮轴螺母扭矩多少？"
+3. 直接提问即可触发，例如：「GK1200 后轮轴螺母扭矩多少？」
 
-> skill 内引用自身文件用"相对本 skill 基目录"的写法，因此装在任意路径都可用。
+> skill 内引用自身文件均采用「相对本 skill 基目录」的写法，因此克隆到任意路径都可用。
 
 ## 用法示例
 
